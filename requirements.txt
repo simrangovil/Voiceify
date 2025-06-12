@@ -1,0 +1,4 @@
+Flask
+gTTS
+python-docx
+PyPDF2
