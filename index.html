@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text to Voice Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Text to Voice</h1>
+
+  <textarea id="text-input" rows="10" cols="50" placeholder="Type or paste your text here..."></textarea>
+  <br />
+  <button onclick="speakText()">🔊 Speak</button>
+
+  <h2>OR Upload Document</h2>
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="doc-file" accept=".txt,.pdf,.docx"/>
+    <button type="submit">Convert to Voice</button>
+  </form>
+
+  <audio id="audio" controls hidden></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
